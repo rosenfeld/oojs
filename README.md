@@ -21,9 +21,8 @@ for helping testing params processed by plugins, like
 it, just don't include it;
 - The [Rails Asset Pipeline](http://guides.rubyonrails.org/asset_pipeline.html).
 Yeah, sorry if you don't use Rails, but
-(this can still be helpful)[https://github.com/rosenfeld/jasmine_assets_enabler]
-for non-Rails applications. Just append this gem to that Gemfile (or replace
-rails\_sandbox\_jasmine by oojs).
+[this can still be helpful](https://github.com/rosenfeld/jasmine_assets_enabler/tree/oojs)
+for non-Rails applications.
 
 ## Installation
 
