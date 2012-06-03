@@ -1,6 +1,7 @@
 require "oojs/version"
 require 'rails_sandbox_jasmine'
 require 'fake-ajax-server'
+require 'jquery-rails'
 require 'sinon-rails'
 
 module Oojs
