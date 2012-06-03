@@ -1,0 +1,1 @@
+../../../resources/js-modules/lib/modules.js.coffee
