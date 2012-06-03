@@ -1,0 +1,9 @@
+[submodule "resources/js-modules"]
+	path = resources/js-modules
+	url = git://github.com/rosenfeld/js-modules.git
+[submodule "resources/jquery-bbq"]
+	path = resources/jquery-bbq
+	url = git://github.com/cowboy/jquery-bbq.git
+[submodule "resources/jasmine-jquery"]
+	path = resources/jasmine-jquery
+	url = git://github.com/velesin/jasmine-jquery.git
