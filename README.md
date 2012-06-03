@@ -39,6 +39,20 @@ And then execute:
 
 I intend to write an article about it soon.
 
+For now, you'll need to create your spec helper first:
+
+    rails g oojs:spec_helper
+
+Then, create some spec:
+
+    rails g oojs:spec shopping_cart
+
+Finally, run your specs:
+
+    rake sandbox_assets:serve
+
+And navigate to http://localhost:5000/ to see them passing.
+
 ## Contributing
 
 1. Fork it
