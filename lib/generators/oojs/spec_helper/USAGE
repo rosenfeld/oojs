@@ -1,0 +1,8 @@
+Description:
+    Create a sample spec helper.
+
+Example:
+    rails generate oojs:spec_helper
+
+    This will create:
+        spec/javascripts/spec_helper.js.coffee

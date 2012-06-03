@@ -1,5 +1,10 @@
 require "oojs/version"
+require 'rails_sandbox_jasmine'
+require 'fake-ajax-server'
+require 'sinon-rails'
 
 module Oojs
-  # Your code goes here...
+  class Engine < Rails::Engine
+    config.sandbox_assets.template ||= 'jasmine/runner'
+  end
 end

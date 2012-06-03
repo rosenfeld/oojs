@@ -1,0 +1,9 @@
+Description:
+    Create a sample spec.
+
+Example:
+    rails generate oojs:spec shopping_cart
+
+    This will create:
+        spec/javascripts/shopping_cart_spec.js.coffee
+        spec/javascripts/shopping_cart/fake_server.js.coffee

@@ -1,0 +1,28 @@
+# =require spec_helper
+# =require_tree ./<%= file_name %>
+
+$ -> new specs.<%= class_name %>Spec
+extendClass 'specs.<%= class_name %>Spec', (spec)->
+  initialize: ->
+    @createFakeServer()
+    @describe()
+
+  describe: ->
+    describe '<%= class_name %>', =>
+      @beforeAll()
+      beforeEach @beforeEach
+      @runSpecs()
+      @afterAll()
+
+  beforeAll: ->
+    @fakeServer.start()
+
+  afterAll: ->
+    @fakeServer.stop()
+
+  beforeEach: =>
+    @fakeServer.ignoreAllRequests()
+
+  runSpecs: =>
+    it 'passes', =>
+      expect(@fakeServer).not.toBeUndefined()
