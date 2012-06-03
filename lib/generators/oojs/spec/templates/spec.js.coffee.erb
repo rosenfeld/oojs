@@ -12,12 +12,12 @@ extendClass 'specs.<%= class_name %>Spec', (spec)->
       @beforeAll()
       beforeEach @beforeEach
       @runSpecs()
-      @afterAll()
+      runs @afterAll
 
   beforeAll: ->
     @fakeServer.start()
 
-  afterAll: ->
+  afterAll: =>
     @fakeServer.stop()
 
   beforeEach: =>
