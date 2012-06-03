@@ -4,9 +4,11 @@ require File.expand_path('../lib/oojs/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Rodrigo Rosenfeld Rosas"]
   gem.email         = ["rr.rosas@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.summary       = %q{Object-oriented JavaScript (or CoffeeScript) for Rails}
+  gem.description   = %q{This is a bundle of tools for helping you
+    to create well organized client-side
+    code to be run in browsers covered by tests (or specs) in an easy way.}
+  gem.homepage      = "http://github.com/rosenfeld/oojs"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
@@ -14,4 +16,7 @@ Gem::Specification.new do |gem|
   gem.name          = "oojs"
   gem.require_paths = ["lib"]
   gem.version       = Oojs::VERSION
+
+  gem.add_dependency 'rails_sandbox_jasmine'
+  gem.add_dependency 'fake-ajax-server'
 end
