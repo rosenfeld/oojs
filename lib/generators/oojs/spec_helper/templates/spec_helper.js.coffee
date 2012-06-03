@@ -1,7 +1,7 @@
 # =require application
 # =require modules
 # =require jquery
-# =require jasmine-jquery
+# =require jasmine_helpers
 # #require jquery.ba-bbq # uncomment for enabling $.deparam()
 #
 # Put your common spec code here.

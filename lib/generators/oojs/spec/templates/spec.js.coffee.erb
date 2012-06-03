@@ -5,6 +5,7 @@ $ -> new specs.<%= class_name %>Spec
 extendClass 'specs.<%= class_name %>Spec', (spec)->
   initialize: ->
     @createFakeServer()
+    @extend this, new specs.jasmine.AjaxHelpers(@fakeServer)
     @describe()
 
   describe: ->
