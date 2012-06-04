@@ -18,5 +18,5 @@ Gem::Specification.new do |gem|
   gem.version       = Oojs::VERSION
 
   gem.add_dependency 'rails_sandbox_jasmine'
-  gem.add_dependency 'fake-ajax-server'
+  gem.add_dependency 'fake-ajax-server', '>= 0.0.2'
 end
