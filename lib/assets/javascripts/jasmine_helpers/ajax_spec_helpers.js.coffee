@@ -25,4 +25,4 @@ extendClass 'specs.jasmine.AjaxHelpers', (self)->
   ignoreRequest: (url, method, format)->
     @checkRequestSettings(url, method, format)
     ajaxServer.ignoreNextRequest()
-
+  ignoreAllRequest: -> ajaxServer.ignoreAllRequest()
