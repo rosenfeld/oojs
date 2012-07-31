@@ -5,15 +5,13 @@ code to be run in browsers covered by tests (or specs) in an easy way.
 
 It uses:
 
-- [Jasmine](http://pivotal.github.com/jasmine/) for writing specs;
+- [oojspec](https://github.com/rosenfeld/oojspec) for writing specs;
 - [jQuery](http://jquery.com/), the excelent DOM manipulation library;
 - [FakeAjaxServer](https://github.com/rosenfeld/fake-ajax-server) for
 simulating AJAX requests made with jQuery. It uses
 [Sinon.js](http://sinonjs.org/) for stubbing _jQuery.ajax()_ calls;
 - [js-modules](https://github.com/rosenfeld/js-modules) for splitting
 your spec "classes" in multiple files for better maintainance;
-- [Jasmine-jQuery](https://github.com/velesin/jasmine-jquery) for
-adding some useful matchers to Jasmine;
 - [jQuery BBQ](https://github.com/cowboy/jquery-bbq/):
 don't count on that. Currently it is there only to provide $.deparam,
 for helping testing params processed by plugins, like
