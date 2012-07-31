@@ -8,6 +8,10 @@ module Oojs
         template 'spec.js.coffee.erb', "spec/javascripts/#{file_name}_spec.js.coffee"
       end
 
+      def create_spec_main
+        template 'spec_main.js.coffee.erb', "spec/javascripts/#{file_name}/main.js.coffee"
+      end
+
       def create_fake_ajax_server
         template 'fake_ajax_server.js.coffee.erb', "spec/javascripts/#{file_name}/fake_server.js.coffee"
       end

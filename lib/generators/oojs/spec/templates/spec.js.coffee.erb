@@ -1,29 +1,4 @@
 # =require spec_helper
 # =require_tree ./<%= file_name %>
 
-$ -> new specs.<%= class_name %>Spec
-extendClass 'specs.<%= class_name %>Spec', (spec)->
-  initialize: ->
-    @createFakeServer()
-    @extend this, new specs.jasmine.AjaxHelpers(@fakeServer)
-    @describe()
-
-  describe: ->
-    describe '<%= class_name %>', =>
-      @beforeAll()
-      beforeEach @beforeEach
-      @runSpecs()
-      runs @afterAll
-
-  beforeAll: ->
-    @fakeServer.start()
-
-  afterAll: =>
-    @fakeServer.stop()
-
-  beforeEach: =>
-    @fakeServer.ignoreAllRequests()
-
-  runSpecs: =>
-    it 'passes', =>
-      expect(@fakeServer).not.toBeUndefined()
+oojspec.describe '<%= class_name %>', new specs.<%= class_name %>Spec
