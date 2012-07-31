@@ -1,1 +1,0 @@
-../../../resources/jasmine-jquery/lib/jasmine-jquery.js

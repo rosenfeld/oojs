@@ -17,6 +17,6 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Oojs::VERSION
 
-  gem.add_dependency 'rails_sandbox_jasmine'
+  gem.add_dependency 'oojspec'
   gem.add_dependency 'fake-ajax-server', '>= 0.0.2'
 end
