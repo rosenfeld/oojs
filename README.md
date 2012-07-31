@@ -19,7 +19,7 @@ for helping testing params processed by plugins, like
 it, just don't include it;
 - The [Rails Asset Pipeline](http://guides.rubyonrails.org/asset_pipeline.html).
 Yeah, sorry if you don't use Rails, but
-[this can still be helpful](https://github.com/rosenfeld/jasmine_assets_enabler/tree/oojs)
+[this can still be helpful](https://github.com/rosenfeld/oojs_assets_enabler/tree/oojs)
 for non-Rails applications.
 
 ## Installation
