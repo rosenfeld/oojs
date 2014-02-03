@@ -17,6 +17,6 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Oojs::VERSION
 
-  gem.add_dependency 'oojspec', '>= 0.1.1'
+  gem.add_dependency 'oojspec', '>= 0.1.2'
   gem.add_dependency 'fake-ajax-server', '>= 0.0.2'
 end
